@@ -1,0 +1,11 @@
+.welcome {
+    grid-area: w;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: larger;
+    font-variant: small-caps;
+    margin: 2rem 0;
+}
+

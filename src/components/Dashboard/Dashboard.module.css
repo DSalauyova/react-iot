@@ -1,0 +1,8 @@
+.content {
+  grid-area: c;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 100px;
+  text-align: center;
+  align-items: center;
+}
