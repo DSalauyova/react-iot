@@ -1,24 +1,21 @@
+import Button from '../components/Button/Button';
 import style from './SignUp.module.css';
 
-const SignUp = (props) => {
-    return <div className={style.sign}>
-        <div>
-            <span>Email :</span>
-            <input className="fixe" />
+const SignUp = () => {
+    return (
+        <div className={style.sign}>
+            <div>
+                <input className={style.fixe} placeholder='Email' />
+            </div>
+            <div>
+                <input className={style.fixe} placeholder='Password' />
+            </div>
+            <div>
+                <input className={style.fixe} placeholder='Confirm Password' />
+            </div>
+            <Button label='OK' className='' />
         </div>
-        <div>
-            <span>Password :</span>
-            <input className='fixe'/>
-        </div>
-        <div>
-            <span>Confirm password :</span>
-            <input className='fixe'/>
-        </div>
-        <div>
-            <button className=''>Ok</button>
-        </div>
-    </div>
-    
+    );
 }
 
 export default SignUp;

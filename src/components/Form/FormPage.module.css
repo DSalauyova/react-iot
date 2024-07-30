@@ -1,17 +1,24 @@
 .content {
     display: flex;
     flex-direction: column;
+    /* Organise les éléments en colonne */
     align-items: center;
+    /* Centre les éléments horizontalement */
     justify-content: center;
+    /* Centre les éléments verticalement */
     font-size: 16px;
     text-align: end;
-
+    /* Aligne le texte à la fin (droite) */
 }
 
 input.fixe {
-    margin-left: 10px! important;
+    margin-left: 10px !important;
+    /* Assure que la marge gauche est appliquée */
+    margin-right: 0;
+    /* Supprime la marge à droite pour l'uniformité */
 }
 
 div button {
     align-self: center;
+    /* Centre le bouton horizontalement dans le conteneur */
 }

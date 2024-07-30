@@ -1,45 +1,30 @@
-/* .App {
-  text-align: center;
-  font-size: larger;
-  font-variant: small-caps;
-}
-
-ul li {
-  text-align: start;
-  list-style-type: square;
-}
-
-.Test {
-  text-align: center;
-  font-size: larger;
-  font-variant: small-caps;
-}
-
-.Edr{
-  list-style-type: georgian;
-} */
-/* project skate */
 .app-wrapper {
   display: grid;
-  grid-template-rows: 2fr 1fr 9fr;
-  grid-template-columns: 2fr;
-  grid-template-areas: 
-  "h h"
-  "c c"
-  "c c"
-  "f f";
-  font-size: larger;
+  grid-template-rows: auto 1fr auto;
+  /* Ajuste les rangées pour header, content, et footer */
+  grid-template-columns: 1fr;
+  /* Une colonne */
+  grid-template-areas:
+    "h"
+    "c"
+    "f";
 }
 
-.app-wrapper-content  {
+.app-wrapper-content {
   grid-area: c;
   background-color: gainsboro;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: center;
+  box-sizing: border-box;
+  min-height: 100vh;
 }
 
+header {
+  grid-area: h;
+}
 
-input.fixe {
-  margin-left: 65px! important;
+footer {
+  grid-area: f;
 }
