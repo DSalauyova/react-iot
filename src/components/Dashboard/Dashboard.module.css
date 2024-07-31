@@ -1,29 +1,59 @@
 .content {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Deux colonnes de taille égale */
-  gap: 60px;
-  /* Espacement entre les colonnes */
-  text-align: center;
-  align-items: center;
-  padding: 20px;
-  /* Ajoute un espace intérieur pour un peu d'air */
-  box-sizing: border-box;
-  /* Inclut le padding dans les dimensions totales */
-  position: relative;
-  overflow: hidden;
-  /* Cache tout ce qui dépasse */
-  min-height: 100px;
-  /* Hauteur minimale pour éviter les sauts */
 }
 
 .content:hover {
   transform: scale(1.02);
 }
 
+.title:hover p,
+.title:hover a {
+  color: brown;
+  font-size: 1.05em;
+  /* Change la couleur du texte et du lien */
+}
+
+.title {
+  font-stretch: semi-expanded;
+  font-size: medium;
+  font-weight: 600;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  padding: 10px;
+}
+
+.title img {
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+  /* Ajoute une transition à l'image */
+  cursor: pointer;
+}
+
+.title:hover img {
+  transform: scale(1.4);
+}
+
+@media (min-width: 769px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Deux colonnes de taille égale */
+    gap: 60px;
+    /* Espacement entre les colonnes */
+    text-align: center;
+    align-items: center;
+    padding: 20px;
+    /* Ajoute un espace intérieur pour un peu d'air */
+    box-sizing: border-box;
+    /* Cache tout ce qui dépasse */
+  }
+}
+
 @media (max-width: 768px) {
   .content {
+    display: grid;
     grid-template-columns: 1fr;
+    text-align: center;
+    align-items: center;
     /* Une seule colonne */
     gap: 10px;
     /* Espacement réduit pour les petits écrans */
@@ -33,34 +63,9 @@
     transition: transform 0.3s ease, background-color 0.3s ease;
   }
 
-  .title:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-
-  .title {
-    font-stretch: semi-expanded;
-    font-size: medium;
-    font-weight: 600;
-    transition: transform 0.3s ease, background-color 0.3s ease;
-    padding: 10px;
-  }
-
-  .title img {
-    margin-right: 10px;
-    transition: transform 0.3s ease;
-    /* Ajoute une transition à l'image */
-  }
-
-  .title:hover img {
-    transform: scale(1.1);
-  }
-
-  .title:hover p,
-  .title:hover a {
-    color: brown;
-    font-size: 1.1em;
-    /* Change la couleur du texte et du lien */
+  /* définir la classe hidden-text comme classe globale */
+  :global(.hidden-text) {
+    display: none;
   }
 
 }

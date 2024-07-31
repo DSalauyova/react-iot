@@ -4,7 +4,7 @@ const Time = (props) => {
     return (
         <div className={style.title}>
             <img src="/icons/chrono.png" height="50px" alt="watch icon" />
-            <p>Temps de la dernière session</p>
+            <p className='hidden-text'>Temps de la dernière session</p>
             <p>{props.time} h</p>
         </div>
     )

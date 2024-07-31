@@ -4,10 +4,9 @@ const Trips = () => {
     return (
         <div className={style.title}>
             <img src="/icons/globe.png" height='40px' alt='Globe icon' />
-            <p>Derniers trajets</p>
-            <a href="##">Voir</a>
+            <p className='hidden-text'>Derniers trajets</p>
+            <a href="##" className='hidden-text'>Voir</a>
         </div>
     )
 }
-
 export default Trips;
