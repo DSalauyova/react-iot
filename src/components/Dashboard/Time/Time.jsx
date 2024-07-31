@@ -1,9 +1,9 @@
-import style from './Time.module.css';
+import style from '../Dashboard.module.css';
 
 const Time = (props) => {
     return (
         <div className={style.title}>
-            <img src="/icons/chrono.png" height="50px" />
+            <img src="/icons/chrono.png" height="50px" alt="watch icon" />
             <p>Temps de la dernière session</p>
             <p>{props.time} h</p>
         </div>

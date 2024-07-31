@@ -2,4 +2,6 @@
     font-stretch: semi-expanded;
     font-size: medium;
     font-weight: 600;
+    min-height: 50px;
+    /* Définir une hauteur minimale pour éviter les sauts */
 }

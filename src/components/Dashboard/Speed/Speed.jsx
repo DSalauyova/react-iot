@@ -1,9 +1,9 @@
-import style from "./Speed.module.css";
+import style from '../Dashboard.module.css';
 
 const Speed = (props) => {
     return (
         <div className={style.title}>
-            <img src="/icons/speed.png" height="45px" />
+            <img src="/icons/speed.png" height="45px" alt="speed icon" />
             <p>Vitesse max</p>
             <p>{props.speed_max} km/h</p>
         </div>
