@@ -8,6 +8,6 @@ footer {
     justify-content: center;
     align-items: center;
     background-color: wheat;
-    color: brown;
+    color: hsl(67, 67%, 35%);
     text-align: center;
 }

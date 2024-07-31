@@ -13,12 +13,7 @@
 
 input.fixe {
     margin-left: 10px !important;
-    /* Assure que la marge gauche est appliquée */
+    /* Assure que la marge gauche est ap    pliquée */
     margin-right: 0;
     /* Supprime la marge à droite pour l'uniformité */
-}
-
-div button {
-    align-self: center;
-    /* Centre le bouton horizontalement dans le conteneur */
 }

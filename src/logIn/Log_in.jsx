@@ -1,19 +1,13 @@
-import React from 'react';
 import Button from '../components/Button/Button';
+import Form from './Form/Form';
 import style from './Log_in.module.css';
 
 const Login = () => {
     return (
-        <div className={style.form_container}>
-            <div>
-                <input className={style.fixe} placeholder='Email' />
-            </div>
-            <div>
-                <input className={style.fixe} placeholder='Password' />
-            </div>
+        <div className={style.container_form}>
+            <Form />
             <Button
-                label="Se connecter"
-            />
+                label='Se Connecter' />
         </div >
     );
 }

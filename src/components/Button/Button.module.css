@@ -1,7 +1,7 @@
 .button {
-    background-color: #4CAF50;
-}
-
-.home {
-    margin-bottom: 30px;
+    background-color: hsl(67, 39%, 49%);
+    max-width: max-content;
+    margin-left: 10px !important;
+    /* Assure que la marge gauche est appliquée */
+    margin-right: 0;
 }

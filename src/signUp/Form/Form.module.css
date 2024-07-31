@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin-left: 0px !important;
+    /* Assure que la marge gauche est appliquée */
+    margin-right: 0;
+    /* Supprime la marge à droite pour l'uniformité */
+}
